@@ -1,24 +1,31 @@
 const Employee = require("../lib/Employee");
 
 test("create employee object", () => {
-  expect(employee.name).toBe("name");
-  expect(employee.id).toBe("id");
-  expect(employee.email).toBe("email");
-  expect(employee.role).toBe("role");
+  const employee = new Employee("Min");
 });
 
-test("create employee getName()", () => {
-  expect(employee.getName()).toBe("name");
+test("set id with constructor", () => {
+  const testValue = 99;
+  const emp = new Employee("Min", testValue);
+  expect(emp.id).toBe(testValue);
 });
 
-test("test the name from getId()", () => {
-  expect(employee.getId()).toBe("id");
+test("set email with constructor", () => {
+  const testValue = "employee@gmail.com";
+  const emp = new Employee("Foo", 1, testValue);
+  expect(emp.email).toBe(testValue);
 });
 
-test("test the name from getEmail()", () => {
-  expect(employee.getEmail()).toBe("email");
+// Test if the getRole() value is Employee
+test("getRole() return Employee", () => {
+  const testValue = "Employee";
+  const emp = new Employee("Jason", 1, "employee@gmail.com");
+  expect(emp.getRole()).toBe(testValue);
 });
 
-test("test the name from getRole()", () => {
-  expect(employee.getRole()).toBe("Employee");
-});
+// test("create employee object", () => {
+//   expect(employee.name).toBe("name");
+//   expect(employee.id).toBe("id");
+//   expect(employee.email).toBe("email");
+//   expect(employee.role).toBe("role");
+// });
