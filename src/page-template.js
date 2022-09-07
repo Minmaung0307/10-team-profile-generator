@@ -1,5 +1,5 @@
 // Export function to generate HTML page
-module.exports = (team) => {
+module.exports = (teamMember) => {
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -25,7 +25,7 @@ module.exports = (team) => {
         <div class="container">
             <div class="row">
                 <div class="main-section col-12 d-flex justify-content-center">
-                    ${createProfile(team)}
+                    ${createProfile(teamMember)}
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@ module.exports = (team) => {
 };
 
 // Create Team Profile
-const createProfile = (team) => {
+const createProfile = (teamMember) => {
   // Create Manager Profile
   const createManager = (manager) => {
     return `

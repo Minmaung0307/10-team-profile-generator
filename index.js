@@ -195,4 +195,5 @@ var pormptManager = function () {
       }
     });
 };
-pormptManager();
+
+pormptManager()
