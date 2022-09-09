@@ -6,26 +6,19 @@ test("create employee object", () => {
 
 test("set id with constructor", () => {
   const testValue = 99;
-  const emp = new Employee("Min", testValue);
-  expect(emp.id).toBe(testValue);
+  const newEmp = new Employee("Min", testValue);
+  expect(newEmp.id).toBe(testValue);
 });
 
 test("set email with constructor", () => {
   const testValue = "employee@gmail.com";
-  const emp = new Employee("Foo", 1, testValue);
-  expect(emp.email).toBe(testValue);
+  const newEmp = new Employee("Zaw", 1, testValue);
+  expect(newEmp.email).toBe(testValue);
 });
 
 // Test if the getRole() value is Employee
 test("getRole() return Employee", () => {
   const testValue = "Employee";
-  const emp = new Employee("Jason", 1, "employee@gmail.com");
-  expect(emp.getRole()).toBe(testValue);
+  const newEmp = new Employee("Zaw", 1, "employee@gmail.com");
+  expect(newEmp.getRole()).toBe(testValue);
 });
-
-// test("create employee object", () => {
-//   expect(employee.name).toBe("name");
-//   expect(employee.id).toBe("id");
-//   expect(employee.email).toBe("email");
-//   expect(employee.role).toBe("role");
-// });

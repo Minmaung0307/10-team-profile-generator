@@ -26,22 +26,21 @@ a:hover {
   max-width: 300px;
   width: 100%;
   color: white;
-  background-color: #028392;
   display: flex;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   border: none;
 }
 
 .manager-card {
-  background-color: #13077b;
+  background-color: #540b0e;
 }
 
 .engineer-card {
-  background-color: #055604;
+  background-color: #9e2a2b;
 }
 
 .intern-card {
-  background-color: #777d05;
+  background-color: #e09f3e;
 }
 
 .card-body {
