@@ -15,4 +15,4 @@ https://github.com/Minmaung0307/team-profile-generator.git
 
 # Video (Demo)
 
-https://drive.google.com/file/d/1GTMPftGUskvpfGiizswGc8Tr3PF1fPgz/view
+https://watch.screencastify.com/v/qvyF1kUao3ouN4inf2jR
